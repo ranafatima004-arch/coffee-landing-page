@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Smart Cup | Premium Landing Page</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Custom Theme Configuration (Humare Brand Variables) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Smart Cup Brand Colors
+                        'cup-primary': '#0f766e',     /* Deep Teal - Premium Look */
+                        'cup-hover': '#115e59',       /* Darker Teal for Hover */
+                        'cup-accent': '#f59e0b',      /* Amber Gold for badges/highlights */
+                        'cup-dark': '#111827',        /* Rich Near-Black for text */
+                        'cup-bg': '#fcfcfd'           /* Soft Off-White Background */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cup-bg text-slate-600 font-sans antialiased">
+
+    <!-- ========================================== -->
+    <!-- 1. NAVIGATION BAR                          -->
+    <!-- ========================================== -->
+    <nav class="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50 px-6 py-4 md:px-12 flex justify-between items-center">
+        
+        <!-- Brand Logo -->
+        <div class="text-xl font-black tracking-tighter text-cup-dark">
+            SMART<span class="text-cup-primary">_CUP.</span>
+        </div>
+        
+        <!-- Center Navigation Links (Hidden on Mobile, Flex on Desktop) -->
+        <div class="hidden md:flex space-x-10 font-medium text-sm tracking-wide">
+            <a href="#features" class="hover:text-cup-primary transition duration-200">Features</a>
+            <a href="#specs" class="hover:text-cup-primary transition duration-200">Tech Specs</a>
+            <a href="#pricing" class="hover:text-cup-primary transition duration-200">Pricing</a>
+        </div>
+        
+        <!-- Right Action Button -->
+        <div>
+            <a href="#pricing" class="bg-cup-dark hover:bg-cup-primary text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-sm hover:shadow transition duration-200">
+                Buy Now
+            </a>
+        </div>
+    </nav>
+    
+    <!-- ========================================== -->
+<!-- 2. HERO SECTION (Split Layout)             -->
+<!-- ========================================== -->
+<header id="home" class="max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Left Column: Product Introduction -->
+    <div class="space-y-6 text-center md:text-left order-2 md:order-1">
+        <!-- Catchy Badge -->
+        <div class="inline-flex items-center space-x-2 bg-amber-50 text-cup-accent text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full">
+            <span>🚀 New Launch 2026</span>
+        </div>
+        
+        <!-- Main Heading -->
+        <h1 class="text-4xl md:text-6xl font-black text-cup-dark leading-tight">
+            Your Coffee. <br>
+            Your Temperature. <br>
+            <span class="text-cup-primary">Always.</span>
+        </h1>
+        
+        <!-- Supporting Paragraph -->
+        <p class="text-base md:text-lg text-slate-500 max-w-md mx-auto md:mx-0 leading-relaxed">
+            Meet the world's smartest premium mug. It keeps your favorite brew at the exact temperature you love from the first sip to the last drop.
+        </p>
+        
+        <!-- Action Buttons (CTAs) -->
+        <div class="pt-2 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+            <a href="#pricing" class="bg-cup-primary hover:bg-cup-hover text-white text-center px-8 py-3.5 rounded-full font-semibold shadow-md transition duration-200">
+                Order Now
+            </a>
+            <a href="#features" class="border-2 border-slate-200 hover:border-cup-dark text-cup-dark text-center px-8 py-3.5 rounded-full font-semibold transition duration-200">
+                Watch Video
+            </a>
+        </div>
+    </div>
+
+    <!-- Right Column: Premium Product Image -->
+    <div class="flex justify-center order-1 md:order-2">
+        <div class="relative w-full max-w-md aspect-square bg-gradient-to-tr from-slate-100 to-teal-50/50 rounded-[2rem] shadow-xl border border-slate-200/60 flex items-center justify-center p-8 overflow-hidden group">
+            
+            <!-- Background Decorative Glow (Piche halka sa daira) -->
+            <div class="absolute -right-10 -top-10 w-48 h-48 bg-cup-primary/10 rounded-full blur-3xl group-hover:bg-cup-primary/20 transition duration-500"></div>
+            <div class="absolute -left-10 -bottom-10 w-48 h-48 bg-cup-accent/10 rounded-full blur-3xl group-hover:bg-cup-accent/20 transition duration-500"></div>
+            
+            <!-- Real Product Image Link -->
+         <!-- Real Product Image Link (Updated with Coffee Theme) -->
+            <img 
+                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=600" 
+                alt="Premium Smart Coffee Cup" 
+                class="h-4/5 w-4/5 object-cover rounded-2xl drop-shadow-[0_20px_35px_rgba(15,118,110,0.25)] transform group-hover:scale-105 group-hover:-rotate-1 transition duration-500 z-10"
+            />
+            
+            <!-- Floating Badge -->
+            <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm border border-slate-100 shadow-sm px-4 py-2 rounded-xl text-xs font-bold text-cup-dark flex items-center space-x-2 z-10">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>In Stock & Ready</span>
+            </div>
+        </div>
+    </div>
+    
+</header>
+
+    <!-- ========================================== -->
+<!-- 3. FEATURES GRID SECTION                   -->
+<!-- ========================================== -->
+<section id="features" class="bg-slate-50 py-16 md:py-24 border-y border-slate-100">
+    <div class="max-w-6xl mx-auto px-6">
+        
+        <!-- Section Header Text -->
+        <div class="text-center max-w-lg mx-auto mb-16 space-y-3">
+            <h2 class="text-3xl md:text-4xl font-black text-cup-dark tracking-tight">
+                Why Choose <span class="text-cup-primary">The Smart Cup?</span>
+            </h2>
+            <p class="text-sm md:text-base text-slate-500">
+                Engineered with premium materials and cutting-edge thermal technology to elevate your daily beverage experience.
+            </p>
+        </div>
+
+        <!-- 3-Column Grid Container -->
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Card 1: Battery Life -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition duration-300 group">
+                <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-2xl text-cup-primary font-bold mb-6 group-hover:scale-110 transition duration-300">
+                    🔋
+                </div>
+                <h3 class="text-xl font-bold text-cup-dark mb-2">24-Hr Battery Life</h3>
+                <p class="text-sm text-slate-500 leading-relaxed">
+                    Smart all-day insulation powered by a long-lasting battery that keeps your coffee hot from morning commute till late night work.
+                </p>
+            </div>
+
+            <!-- Card 2: LED Temperature Display -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition duration-300 group">
+                <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-2xl text-cup-accent font-bold mb-6 group-hover:scale-110 transition duration-300">
+                    🌡️
+                </div>
+                <h3 class="text-xl font-bold text-cup-dark mb-2">Live Temp Display</h3>
+                <p class="text-sm text-slate-500 leading-relaxed">
+                    Never burn your tongue again. Simply tap the sleek OLED smart lid to see exactly how hot or cold your drink is in real time.
+                </p>
+            </div>
+
+            <!-- Card 3: Self-Cleaning UV Mode -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition duration-300 group">
+                <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center text-2xl text-purple-600 font-bold mb-6 group-hover:scale-110 transition duration-300">
+                    🧼
+                </div>
+                <h3 class="text-xl font-bold text-cup-dark mb-2">Self-Cleaning UV Mode</h3>
+                <p class="text-sm text-slate-500 leading-relaxed">
+                    Built-in UV-C light deep inside the lid automatically purifies your bottle and eliminates 99.9% of bacteria in just 60 seconds.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+ <!-- ========================================== -->
+<!-- 4. PRICING & CTA SECTION                   -->
+<!-- ========================================== -->
+<section id="pricing" class="py-16 md:py-24 max-w-6xl mx-auto px-6">
+    <div class="bg-gradient-to-br from-cup-dark to-slate-900 rounded-[2.5rem] p-8 md:p-16 text-center text-white relative overflow-hidden shadow-xl">
+        
+        <!-- Decorative Glow inside the banner -->
+        <div class="absolute -left-20 -bottom-20 w-64 h-64 bg-cup-primary/20 rounded-full blur-3xl"></div>
+        <div class="absolute -right-20 -top-20 w-64 h-64 bg-cup-accent/10 rounded-full blur-3xl"></div>
+
+        <div class="relative z-10 max-w-2xl mx-auto space-y-6">
+            <span class="text-cup-accent text-xs md:text-sm font-bold tracking-widest uppercase">Limited Time Offer</span>
+            
+            <h2 class="text-3xl md:text-5xl font-black tracking-tight leading-tight">
+                Ready to Upgrade Your <br class="hidden md:block"> Daily Coffee Routine?
+            </h2>
+            
+            <p class="text-slate-400 text-sm md:text-base max-w-md mx-auto">
+                Join thousands of coffee lovers who never settle for a cold brew. Order today and get free global shipping.
+            </p>
+
+            <!-- Price Tag Display -->
+            <div class="py-4 flex items-center justify-center space-x-4">
+                <span class="text-4xl md:text-6xl font-black text-white">$49</span>
+                <div class="text-left">
+                    <span class="text-sm md:text-base text-slate-400 line-through block">$79</span>
+                    <span class="text-xs md:text-sm text-cup-accent font-bold uppercase tracking-wider">Save 38% Today</span>
+                </div>
+            </div>
+
+            <!-- Big Action Button -->
+            <div class="pt-2">
+                <a href="#" class="inline-block bg-cup-primary hover:bg-cup-hover text-white px-10 py-4 rounded-full font-bold shadow-lg hover:shadow-xl hover:scale-[1.02] transition duration-200 text-base md:text-lg">
+                    Grab Your Smart Cup Now
+                </a>
+            </div>
+            
+            <span class="block text-xs text-slate-500 pt-2">🔒 30-Day Money-Back Guarantee Included</span>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================== -->
+<!-- 5. FOOTER                                  -->
+<!-- ========================================== -->
+<footer class="bg-white border-t border-slate-100 py-8 text-center text-xs md:text-sm text-slate-400">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div>
+            <span class="font-bold text-cup-dark">SMART_CUP.</span> © 2026 Tech Lifestyle Inc. All rights reserved.
+        </div>
+        <div class="flex space-x-6">
+            <a href="#" class="hover:text-cup-primary transition">Privacy Policy</a>
+            <a href="#" class="hover:text-cup-primary transition">Terms of Service</a>
+            <a href="#" class="hover:text-cup-primary transition">Support</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
